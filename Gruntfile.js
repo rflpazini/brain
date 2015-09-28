@@ -1,0 +1,33 @@
+module.exports = function(grunt) {
+	grunt.initConfig({
+		pkg: grunt.file.readJSON('package.json'),
+		sass: {
+			dist: {
+				src: ['sass/brain.scss'],
+				dest: 'dist/css/<%= pkg.name %>.css'
+			}
+		},
+		cssmin: {
+			target: {
+				files: [{
+					expand:true,
+					cwd: 'dist/css',
+					src: ['*.css', '!*.min.css'],
+					dest: 'dist/css',
+					ext: '.min.css'
+				}]
+			}
+		},
+		watch: {
+			css: {
+				files: '**/*.scss',
+				tasks: ['sass']
+			}
+		}
+	});
+	grunt.loadNpmTasks('grunt-contrib-sass');
+	grunt.loadNpmTasks('grunt-contrib-watch');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
+	grunt.registerTask('default',['watch']);
+	grunt.registerTask('dist',['sass', 'cssmin']);
+}

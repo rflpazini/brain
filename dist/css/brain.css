@@ -1,0 +1,22 @@
+/* This is the first release about a new Todolist.
+ * Some materials to study and knew about Grunt, Sass and React.js
+ * Made by me rflpazini (@RafaelPazini) 
+ */
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Slab);
+* {
+  margin: 0 auto;
+  padding: 0; }
+
+body {
+  font-family: "Roboto", sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Roboto-Slab", serif; }
+
+/*# sourceMappingURL=brain.css.map */

@@ -1,0 +1,33 @@
+{
+    "name": "brain",
+    "version": "0.1.0",
+    "authors": [
+        "Rafael Pazini <rflpazini@gmail.com>"
+    ],
+    "description": "A simple Todolist made with React.js",
+    "main": [
+        "dist/js/brain.js",
+        "sass/brain.scss",
+        "index.html"
+    ],
+    "moduleType": [
+        "globals"
+    ],
+    "keywords": [
+        "todolist",
+        "css",
+        "react",
+        "js",
+        "example",
+        "sass"
+    ],
+    "license": "MIT",
+    "homepage": "http://rflpazini.github.io/brain",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ]
+}

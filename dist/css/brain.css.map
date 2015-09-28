@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";;;;AAAQ,2DAAmD;AACnD,gEAAwD;AAIhE,CAAE;EACE,MAAM,EAAE,MAAM;EACd,OAAO,EAAE,CAAC;;AAGd,IAAK;EACD,WAAW,EATF,oBAAQ;;AAYrB;;;;;EAKG;EACF,WAAW,EAjBE,oBAAa",
+"sources": ["../../sass/basics.scss"],
+"names": [],
+"file": "brain.css"
+}
