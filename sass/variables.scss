@@ -1,0 +1,25 @@
+/* -- Fonts -- */
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+$font-stack: 'Roboto',
+sans-serif;
+$font-header: 'Roboto Slab', serif;
+$font-logo: 'Pacifico', cursive;
+
+/* -- Colors -- */
+
+$red: #C62828;
+$lightred: #FF8A80;
+$bluelink: #4183c4;
+
+/* -- Container --*/
+
+$large-device: 1024px;
+$mediun-device: 900px;
+$container-max: 970px;
+$container-med: 740px;
+
+/* -- Text align --*/
+
+.center {
+    text-align: center !important;
+}
