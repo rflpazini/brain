@@ -19,13 +19,7 @@ module.exports = function(grunt) {
             }
         },
         jshint: {
-            all: ['js/**/*.js', 'dist/js/out.js']
-        },
-        concat: {
-        	dist: {
-        		src: ['js/brain.js', 'js/utils.js', 'node_modules/director/build/director.js'],
-        		dest: 'dist/js/out.js'
-        	}
+            all: ['js/**/*.js']
         },
         watch: {
             css: {
@@ -39,7 +33,6 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-jshint');
-    grunt.loadNpmTasks('grunt-contrib-concat');
 
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('dev', ['sass', 'jshint']);

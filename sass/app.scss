@@ -9,3 +9,8 @@ footer {
     height: 7px;
     background-color: $red;
 }
+
+.todoapp input::input-placeholder {
+	font-weight: 300;
+	color: #eee;
+}

@@ -1,8 +1,3 @@
-/*jshint quotmark: false */
-/*jshint white: false */
-/*jshint trailing: false */
-/*jshint newcap: false */
-/*global React */
 var app = app || {};
 
 (function () {
@@ -51,7 +46,7 @@ var app = app || {};
 				nextState.editText !== this.state.editText
 			);
 		},
-		
+
 		componentDidUpdate: function (prevProps) {
 			if (!prevProps.editing && this.props.editing) {
 				var node = React.findDOMNode(this.refs.editField);

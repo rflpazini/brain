@@ -1,8 +1,3 @@
-/*jshint quotmark:false */
-/*jshint white:false */
-/*jshint trailing:false */
-/*jshint newcap:false */
-/*global React */
 var app = app || {};
 
 (function () {
@@ -10,7 +5,8 @@ var app = app || {};
 
 	app.TodoFooter = React.createClass({
 		render: function () {
-			var activeTodoWord = app.Utils.pluralize(this.props.count, 'item');
+			var activeTodoWord = app.Utils.pluralize(this.props.count, 'tarefa');
+			var ativa = app.Utils.pluralize(this.props.count, 'ativa');
 			var clearButton = null;
 
 			if (this.props.completedCount > 0) {
@@ -23,20 +19,19 @@ var app = app || {};
 				);
 			}
 
-			// React idiom for shortcutting to `classSet` since it'll be used often
 			var cx = React.addons.classSet;
 			var nowShowing = this.props.nowShowing;
 			return (
 				<footer className="footer">
 					<span className="todo-count">
-						<strong>{this.props.count}</strong> {activeTodoWord} left
+						<strong>{this.props.count}</strong> {activeTodoWord} {ativa}
 					</span>
 					<ul className="filters">
 						<li>
 							<a
 								href="#/"
 								className={cx({selected: nowShowing === app.ALL_TODOS})}>
-									All
+									Todos
 							</a>
 						</li>
 						{' '}
@@ -44,7 +39,7 @@ var app = app || {};
 							<a
 								href="#/active"
 								className={cx({selected: nowShowing === app.ACTIVE_TODOS})}>
-									Active
+									Itens para 
 							</a>
 						</li>
 						{' '}
